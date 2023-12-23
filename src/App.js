@@ -1,18 +1,9 @@
 import React, { useRef, useState } from 'react';
 import './App.css';
-
-//import firebase from 'firebase/app'; //older version
-import firebase from 'firebase/compat/app'; //v9
-
-//to use auth
-//import 'firebase/auth'; //older version
-import 'firebase/compat/auth'; //v9
-
-//to use firestore
-//import 'firebase/firestore'; //Older Version
-import 'firebase/compat/firestore'; //v9
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth'; 
+import 'firebase/compat/firestore';
 import 'firebase/analytics';
-
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
@@ -39,7 +30,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>⚛️🔥💬</h1>
+        <h1>Mukund's CHATAPP</h1>
         <SignOut />
       </header>
       <section>
